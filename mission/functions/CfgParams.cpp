@@ -17,13 +17,14 @@ class Params {
 /*   70 */  "S.O.G. Prairie Fire (MAVC, PAVN, ARVN)",
 /*   60 */  "Unsung"
         };
-        values[] = {0,1,2,10,40,20,50,30,70,60};
+        values[] = {0,1,2,10,40,20,50,30,60};
         default = 0;
-    };    class WeaponType {
+    };
+    class WeaponType {
         title = "Select which weapon type the pool will be comprised of";
         texts[] = {"All","SMG/Shotguns","Rifles","Snipers","Machine Guns","Pistols"};
         values[] = {0,1,2,3,4,5};
-        default = 0;
+        default = 3;
     };
     class Loadout {
         title = "Select which mod the player loadout will be created from";
@@ -55,7 +56,7 @@ class Params {
 /*   62 */  "Unsung (R.O.K.)",
 /*   63 */  "Unsung (U.S.)"
         };
-        values[] = {0,1,2,10,11,12,40,41,42,43,44,20,22,21,50,51,30,31,32,70,71,72,60,61,62,63};
+        values[] = {0,1,2,10,11,12,40,41,42,43,44,20,22,21,50,51,30,31,32,60,61,62,63};
         default = 0;
     };
     SPACER(game);
@@ -69,7 +70,7 @@ class Params {
         title = "Kill streak required to advance to next weapon";
         texts[] = {"Auto-Detect (By weapon pool)","1","2","3","4","5","6","7","8","9","10"};
         values[] = {0,1,2,3,4,5,6,7,8,9,10};
-        default = 0;
+        default = 3;
     };
     class EnemyMapBlips {
         title = "Enemy blips on the radar";
@@ -81,7 +82,7 @@ class Params {
         title = "Maximum rounds played before the mission ends";
         texts[] = {"Infinite","1","2","3","4","5","6","7","8","9","10"};
         values[] = {0,1,2,3,4,5,6,7,8,9,10};
-        default = 0;
+        default = 3;
     };
     SPACER(ai);
     class AIUnits {
@@ -94,7 +95,7 @@ class Params {
         title = "AI difficulty";
         texts[] = {"Storm Trooper","Rookie","Recruit","Veteran","Wall Hacks & Aim Bot"};
         values[] = {0,25,50,75,100};
-        default = 25;
+        default = 75;
     };
     class AIDifficultyRandom {
         title = "Randomize individual AI difficulty, up to the difficulty specified above";
@@ -107,13 +108,13 @@ class Params {
         title = "Time of day";
         texts[] = {"Random","6 AM","9 AM","12 PM","3 PM","6 PM"};
         values[] = {0,6,9,12,15,18};
-        default = 0;
+        default = 18;
     };
     class WeatherFog {
         title = "Fog density";
         texts[] = {"Random","No Fog","Light Fog","Heavy Fog"};
         values[] = {0,1,2,3};
-        default = 1;
+        default = 0;
     };
     class WeatherRain {
         title = "Rain levels";

@@ -101,8 +101,8 @@ private _loadout = if (_paramValue == 0) then {
 } else {_paramValue};
 
 (switch _loadout do {
-	case VANILLA:{["U_B_CombatUniform_mcam_vest","V_PlateCarrier1_rgr","H_HelmetB_light_sand","G_Bandanna_aviator"]};
-	case VANILLA_DLC:{["U_B_T_Soldier_SL_F","V_PlateCarrier1_tna_F","H_HelmetB_Light_tna_F","G_Bandanna_aviator"]};
+	case VANILLA:{["U_B_CombatUniform_mcam_vest","V_PlateCarrier1_rgr","H_HelmetB_light_sand","G_Bandanna_aviator","HandGrenade"]};
+	case VANILLA_DLC:{["U_B_T_Soldier_SL_F","V_PlateCarrier1_tna_F","H_HelmetB_Light_tna_F","G_Bandanna_aviator","HandGrenade"]};
 
 	case TCB_BAF_Desert:{["UK3CB_BAF_U_CombatUniform_DDPM_ShortSleeve","UK3CB_BAF_V_Osprey_DDPM5","UK3CB_BAF_H_Mk6_DDPM_B","UK3CB_BAF_G_Tactical_Black",{
 		isClass(configfile >> "CfgPatches" >> "UK3CB_BAF_Equipment")
