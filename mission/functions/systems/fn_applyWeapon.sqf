@@ -60,10 +60,20 @@ if !(ROUND_OVER) then {
 {player removeMagazine _x} foreach magazines player;
 removeAllWeapons player;
 
+// Normal weapon handling
 while {player canAdd _magazine} do {
 	player addMagazine _magazine;
 };
 player addWeapon _weapon;
+
+// Add grenades as additional equipment for players only
+private _grenadeCount = 3; // Number of grenades to give
+private _grenadeType = selectRandom ["HandGrenade", "MiniGrenade"]; // Random grenade type
+for "_i" from 1 to _grenadeCount do {
+	if (player canAdd _grenadeType) then {
+		player addMagazine _grenadeType;
+	};
+};
 
 if (!isNil "GG_c_fireMode") then {
 	private _weapon = currentWeapon player;

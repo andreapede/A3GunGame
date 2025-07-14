@@ -112,8 +112,7 @@ switch _weaponPool do {
 			"LMG_Mk200_F",
 			format["arifle_MX_SW%1_F",selectRandom["","_Black"]],
 			"LMG_Zafir_F"
-		],
-		[ // Pistol
+		],		[ // Pistol
 			"hgun_Pistol_heavy_01_F",
 			"hgun_ACPC2_F",
 			"hgun_P07_F",

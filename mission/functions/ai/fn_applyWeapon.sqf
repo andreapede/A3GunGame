@@ -35,6 +35,7 @@ private _magazine = getArray(configFile >> "CfgWeapons" >> _weapon >> "magazines
 {_unit removeMagazine _x} foreach magazines _unit;
 removeAllWeapons _unit;
 
+// AI gets only normal weapons, no grenades
 while {_unit canAdd _magazine} do {
 	_unit addMagazine _magazine;
 };

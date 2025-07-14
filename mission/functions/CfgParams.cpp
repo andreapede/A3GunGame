@@ -19,8 +19,7 @@ class Params {
         };
         values[] = {0,1,2,10,40,20,50,30,70,60};
         default = 0;
-    };
-    class WeaponType {
+    };    class WeaponType {
         title = "Select which weapon type the pool will be comprised of";
         texts[] = {"All","SMG/Shotguns","Rifles","Snipers","Machine Guns","Pistols"};
         values[] = {0,1,2,3,4,5};
